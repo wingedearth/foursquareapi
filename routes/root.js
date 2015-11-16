@@ -31,6 +31,7 @@ router.post('/search', function(req, res, next) {
 
   // Add URI-encoded location to uri.
   uri += "&near=" + encodeURIComponent(req.body.place.name);
+  uri += "&query=" + encodeURIComponent(req.body.place.query);
 
   console.log("Attempting to connect to: ", uri);
 

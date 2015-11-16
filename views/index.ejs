@@ -21,7 +21,10 @@
     <h3>Search <%= (Math.random() > 0.5) ? "Foursquare" : "Swarm" %></h3>
     <form method="POST" action="/search">
       <label for="place">Place Name</label>
-      <input id="place" type="text" name="place[name]" placeholder="Cleveland, OH"/>
+      <input id="place" type="text" name="place[name]" placeholder="Rochester, NY"/>
+      <br>
+      <label for="query" style="display: inline-block; width: 80px">Search For</label>
+      <input id="query" type="text" name="place[query]" placeholder="Persian restaurant"/>
       <input type="submit" value="Search" />
     </form>
 

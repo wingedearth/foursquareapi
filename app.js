@@ -54,4 +54,9 @@ app.use(function(err, req, res, next) {
   });
 });
 
-module.exports = app;
+app.listen(3000, function() {
+  console.log('Hello, this is West Highland White Terrier.');
+});
+
+//module.exports = app;
+
