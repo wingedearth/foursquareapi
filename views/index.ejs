@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>
+       Welcome to <strong><em><%= title %></em></strong>, an example of
+       how to make an Express that uses the
+       <a href="https://developer.foursquare.com/start">Foursquare API</a>!
+    </p>
+    <p>
+       … or wait, is it
+       <a href="http://blog.hootsuite.com/foursquare-vs-the-swarm-app-whats-the-difference/">Swarm?</a>
+    </p>
+
+    <hr><!-- --------------------- -->
+
+    <h3>Search <%= (Math.random() > 0.5) ? "Foursquare" : "Swarm" %></h3>
+    <form method="POST" action="/search">
+      <label for="place">Place Name</label>
+      <input id="place" type="text" name="place[name]" placeholder="Cleveland, OH"/>
+      <input type="submit" value="Search" />
+    </form>
+
+  </body>
+</html>
